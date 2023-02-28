@@ -1,5 +1,7 @@
 package com.lisa.springsecurity.models;
 
+
+
 import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;

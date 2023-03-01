@@ -18,7 +18,7 @@ public class Person {
     @Column(name = "username")
     @NotEmpty(message = "full name be should not empty")
     @Size(min = 2, max = 100, message = "title should be from 2 to 100 ")
-    private String userName;
+    private String username;
 
     @Column(name = "year_of_birth")
     @Min(value = 1900, message = "year of birth should be more than 1900")
@@ -32,8 +32,8 @@ public class Person {
     }
 
 
-    public Person(String userName, int yearOfBirth) {
-        this.userName = userName;
+    public Person(String username, int yearOfBirth) {
+        this.username = username;
         this.yearOfBirth = yearOfBirth;
     }
 
@@ -45,12 +45,12 @@ public class Person {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public int getYearOfBirth() {
@@ -73,7 +73,7 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", userName='" + username + '\'' +
                 ", yearOfBirth=" + yearOfBirth +
                 ", password='" + password + '\'' +
                 '}';
